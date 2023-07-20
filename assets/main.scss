@@ -1,0 +1,7 @@
+@use 'vuetify/styles/main' with (
+  $body-font-family: 'Jost',
+);
+
+.clickable {
+  cursor: pointer;
+}
