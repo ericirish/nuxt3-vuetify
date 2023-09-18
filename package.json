@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
+    "@nuxt/devtools": "^0.8.3",
     "@types/node": "^18.16.19",
     "eslint": "^8.45.0",
     "eslint-plugin-nuxt": "^4.0.0",
