@@ -37,8 +37,17 @@ export default defineNuxtConfig({
   css: [
     'vuetify/lib/styles/main.sass',
     '@mdi/font/css/materialdesignicons.min.css',
-    '~/assets/main.scss',
+    '~/assets/main.scss'
   ],
+
+  modules: [
+    '@pinia/nuxt',
+    'nuxt-feathers-pinia'
+  ],
+
+  typescript: {
+    shim: false
+  },
 
   components: {
     global: true,
@@ -54,5 +63,5 @@ export default defineNuxtConfig({
   },
   build: {
     transpile: ['vuetify']
-  },
+  }
 })
