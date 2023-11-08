@@ -1,4 +1,4 @@
-export const useValidations = () => {
+export const useFormValidations = () => {
   const valid = ref(false)
 
   return {

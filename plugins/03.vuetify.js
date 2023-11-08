@@ -5,15 +5,7 @@ import * as directives from 'vuetify/directives'
 
 const customTheme = {
   dark: false,
-  colors: {
-    // primary: '#9155FD',
-    // secondary: '#56ca00',
-    // accent: '#ffb400',
-    // background: '#f4f5fa',
-    // cash: '#118C4F',
-    // error: '#f74b51',
-    // info: '#16b1ff'
-  }
+  colors: {}
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
@@ -27,9 +19,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         customTheme
       }
     },
-    defaults: {
-
-    },
+    defaults: {},
     aliases: {
       PaddedCard: components.VCard
     }

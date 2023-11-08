@@ -11,9 +11,9 @@
     "lint": "yarn lint:js"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.3",
+    "@nuxt/devtools": "^1.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@types/node": "^18.16.19",
+    "@types/node": "^20.8.8",
     "eslint": "^8.45.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.15.1",
@@ -31,10 +31,9 @@
     "@feathersjs/socketio-client": "^5.0.11",
     "@mdi/font": "^7.2.96",
     "@pinia/nuxt": "^0.5.1",
-    "feathers-pinia": "^3.0.0-pre.17",
-    "nuxt-feathers-pinia": "^0.0.3",
+    "feathers-pinia": "^4.1.1",
     "pinia": "^2.1.7",
     "socket.io-client": "^4.7.2",
-    "vuetify": "^3.3.9"
+    "vuetify": "^3.3.23"
   }
 }

@@ -18,25 +18,25 @@ export const useSnackbar = defineStore('snackbars', {
     data: {}
   }),
   actions: {
-    snackSuccess(text: string) {
+    snackSuccess (text: string) {
       this.snack({
         text,
         color: 'green-darken-2',
         icon: 'mdi-check-circle-outline'
       })
     },
-    snackError(text: string) {
+    snackError (text: string) {
       this.snack({
         text,
         color: 'red-darken-2',
         icon: 'mdi-alert-circle-outline'
       })
     },
-    snack(data: SnackbarData) {
+    snack (data: SnackbarData) {
       this.isOpen = true
       this.data = data
     },
-    close() {
+    close () {
       this.isOpen = false
       this.data = {}
     }
