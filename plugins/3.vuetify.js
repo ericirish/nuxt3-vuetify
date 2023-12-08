@@ -5,7 +5,16 @@ import * as directives from 'vuetify/directives'
 
 const customTheme = {
   dark: false,
-  colors: {}
+  colors: {
+    text: '#333333',
+    primary: '#a37ea8',
+    secondary: '#b7d0d7',
+    accent: '#f7bead',
+    tertiary: '#7b9dc6',
+    background: '#eeeee4',
+    error: '#FF4081',
+    info: '#FFABAB'
+  }
 }
 
 export default defineNuxtPlugin((nuxtApp) => {

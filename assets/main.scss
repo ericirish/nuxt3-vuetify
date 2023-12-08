@@ -1,0 +1,15 @@
+$heading-font-family: 'Quicksand';
+$button-font-weight: 600;
+
+@use 'vuetify' with (
+  $body-font-family: 'Onest',
+  $heading-font-family: $heading-font-family,
+);
+
+.clickable {
+  cursor: pointer;
+}
+
+.heading-font-family {
+  font-family: $heading-font-family;
+}
