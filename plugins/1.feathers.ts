@@ -48,10 +48,10 @@ export default defineNuxtPlugin(async (nuxt) => {
     paramsForServer: [],
     skipGetIfExists: true,
     customSiftOperators: {},
-    setupInstance(data) {
+    setupInstance (data) {
       return data
     },
-    customizeStore(defaultStore) {
+    customizeStore (defaultStore) {
       return {}
     },
     services

@@ -63,9 +63,9 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
 
-  gtag: {
-    id: 'G-'
-  },
+  // gtag: {
+  //   id: 'G-'
+  // },
 
   components: {
     dirs: [
