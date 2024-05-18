@@ -8,7 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "npm run lint:js"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.0",
@@ -26,15 +26,9 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@feathersjs/authentication-client": "^5.0.11",
-    "@feathersjs/feathers": "^5.0.12",
-    "@feathersjs/rest-client": "^5.0.11",
-    "@feathersjs/socketio-client": "^5.0.11",
     "@mdi/font": "^7.2.96",
     "@nuxt/content": "^2.9.0",
     "@pinia/nuxt": "^0.5.1",
-    "feathers-pinia": "^4.1.1",
-    "nuxt-feathers-pinia": "^0.1.0",
     "pinia": "^2.1.7",
     "socket.io-client": "^4.7.2",
     "vuetify": "^3.3.23"

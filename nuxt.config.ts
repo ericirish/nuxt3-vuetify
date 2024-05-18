@@ -58,7 +58,6 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@pinia/nuxt',
-    'nuxt-feathers-pinia',
     'nuxt-gtag',
     '@nuxt/content'
   ],
