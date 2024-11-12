@@ -10,6 +10,9 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm lint:js"
   },
+  "overrides": {
+    "vue": "latest"
+  },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
@@ -25,10 +28,10 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@feathersjs/authentication-client": "^5.0.11",
+    "@feathersjs/authentication-client": "^5.0.31",
     "@feathersjs/feathers": "^5.0.31",
-    "@feathersjs/rest-client": "^5.0.11",
-    "@feathersjs/socketio-client": "^5.0.11",
+    "@feathersjs/rest-client": "^5.0.31",
+    "@feathersjs/socketio-client": "^5.0.31",
     "@mdi/js": "^7.4.47",
     "@nuxt/content": "^2.9.0",
     "@nuxt/fonts": "^0.10.2",

@@ -1,7 +1,7 @@
 // plugins/1.feathers.ts
-import { feathers } from '@feathersjs/feathers'
+import { type Service, feathers } from '@feathersjs/feathers'
 import authenticationClient from '@feathersjs/authentication-client'
-import { createPiniaClient, defineGetters, defineSetters, OFetch } from 'feathers-pinia'
+import { OFetch, createPiniaClient } from 'feathers-pinia'
 
 // rest imports for the server
 import { $fetch } from 'ofetch'
