@@ -68,12 +68,12 @@ v-container
           v-if="!auth.isAuthenticated"
           @click="auth.login"
         )
-          v-img.flex-grow-0(
-            contain
-            width="200px"
-            src="/images/google/web_light_rd_SI@1x.png"
-            srcset="/images/google/web_light_rd_SI@2x.png 2x, /images/google/web_light_rd_SI@3x.png 3x, /images/google/web_light_rd_SI@4x.png 4x"
-            alt="Sign in with Google"
-            height="40px"
-          )
+          //- v-img.flex-grow-0(
+          //-   contain
+          //-   width="200px"
+          //-   src="/images/google/web_light_rd_SI@1x.png"
+          //-   srcset="/images/google/web_light_rd_SI@2x.png 2x, /images/google/web_light_rd_SI@3x.png 3x, /images/google/web_light_rd_SI@4x.png 4x"
+          //-   alt="Sign in with Google"
+          //-   height="40px"
+          //- )
 </template>
