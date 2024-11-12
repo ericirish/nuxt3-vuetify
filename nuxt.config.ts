@@ -18,15 +18,6 @@ export default defineNuxtConfig({
         { hid: 'og:description', property: 'og:description', content: '' }
       ],
       link: [
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com'
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap',
-          crossorigin: ''
-        },
         { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico' },
         { rel: 'apple-touch-icon-precomposed', href: '/favicons/apple-touch-icon-57x57.png' },
         { rel: 'apple-touch-icon-precomposed', href: '/favicons/apple-touch-icon-114x114.png' },
@@ -61,7 +52,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'nuxt-gtag',
     '@nuxt/content',
-    'vuetify-nuxt-module'
+    'vuetify-nuxt-module',
+    '@nuxt/fonts'
   ],
 
   vuetify: {
@@ -111,10 +103,6 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['composables/**', 'stores/**']
-  },
-
-  build: {
-    transpile: ['vuetify']
   },
 
   compatibilityDate: '2024-11-12'

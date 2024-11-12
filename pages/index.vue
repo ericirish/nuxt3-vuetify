@@ -5,3 +5,9 @@ h1 Hello World
 <script setup>
 
 </script>
+
+<style lang="scss">
+.hello {
+  width: 10px;
+}
+</style>
