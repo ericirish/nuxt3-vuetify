@@ -1,7 +1,7 @@
 // plugins/1.feathers.ts
 import { feathers } from '@feathersjs/feathers'
 import authenticationClient from '@feathersjs/authentication-client'
-import { createPiniaClient, OFetch } from 'feathers-pinia'
+import { createPiniaClient, defineGetters, defineSetters, OFetch } from 'feathers-pinia'
 
 // rest imports for the server
 import { $fetch } from 'ofetch'
@@ -45,7 +45,7 @@ export default defineNuxtPlugin(async (nuxt) => {
     ssr: !!process.server,
     idField: '_id',
     whitelist: [],
-    paramsForServer: [],
+    paramsForServer: [''],
     skipGetIfExists: true,
     customSiftOperators: {},
     setupInstance (data) {
@@ -54,7 +54,9 @@ export default defineNuxtPlugin(async (nuxt) => {
     customizeStore (defaultStore) {
       return {}
     },
-    services
+    services: {
+      ...services
+    }
   })
 
   return { provide: { api } }

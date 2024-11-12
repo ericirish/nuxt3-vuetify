@@ -1,0 +1,16 @@
+$heading-font-family: 'Quicksand';
+$button-font-weight: 600;
+// https://github.com/vuetifyjs/vuetify/blob/master/packages/vuetify/src/styles/settings/_variables.scss
+@use 'vuetify' with (
+  $heading-font-family: 'Cormorant Garamond',
+  $body-font-family: 'Fenwick',
+);
+
+
+.clickable {
+  cursor: pointer;
+}
+
+.heading-font-family {
+  font-family: $heading-font-family;
+}

@@ -5,5 +5,3 @@ h1 Hello World
 <script setup>
 
 </script>
-
-<style lang="scss" scoped></style>

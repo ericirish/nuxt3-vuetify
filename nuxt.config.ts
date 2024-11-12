@@ -1,12 +1,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
+
   runtimeConfig: {
     public: {
       baseUrl: 'http://localhost:3000',
       apiUrl: 'http://localhost:3030'
     }
   },
+
   app: {
     head: {
       title: '',
@@ -52,16 +54,46 @@ export default defineNuxtConfig({
   },
 
   css: [
-    'vuetify/lib/styles/main.sass',
-    '@mdi/font/css/materialdesignicons.min.css',
-    '~/assets/main.scss'
+    '~/styles/main.scss'
   ],
+
   modules: [
     '@pinia/nuxt',
-    'nuxt-feathers-pinia',
     'nuxt-gtag',
-    '@nuxt/content'
+    '@nuxt/content',
+    'vuetify-nuxt-module'
   ],
+
+  vuetify: {
+    moduleOptions: {
+      styles: { configFile: '/styles/settings.scss' }
+    },
+    vuetifyOptions: {
+      defaults: {},
+      icons: {
+        defaultSet: 'mdi'
+      },
+      theme: {
+        defaultTheme: 'light',
+        themes: {
+          light: {
+            dark: false,
+            colors: {
+
+            }
+          }
+          // You can also define a dark theme
+          // dark: {
+          //   dark: true,
+          //   colors: {
+          //     primary: '#2196F3'
+          //     // ... other colors
+          //   }
+          // }
+        }
+      }
+    }
+  },
 
   // gtag: {
   //   id: 'G-'
@@ -83,5 +115,7 @@ export default defineNuxtConfig({
 
   build: {
     transpile: ['vuetify']
-  }
+  },
+
+  compatibilityDate: '2024-11-12'
 })
