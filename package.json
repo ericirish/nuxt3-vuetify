@@ -37,6 +37,7 @@
     "@nuxt/fonts": "^0.10.2",
     "@pinia/nuxt": "^0.7.0",
     "feathers-pinia": "^4.5.4",
+    "nuxt-feathers-pinia": "^0.1.0",
     "pinia": "^2.1.7",
     "sass": "^1.80.6",
     "socket.io-client": "^4.7.2",

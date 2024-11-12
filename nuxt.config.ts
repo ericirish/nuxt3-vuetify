@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     '@nuxt/content',
     'vuetify-nuxt-module',
+    'nuxt-feathers-pinia',
     '@nuxt/fonts'
   ],
 
