@@ -51,7 +51,6 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     'nuxt-gtag',
-    '@nuxt/content',
     'vuetify-nuxt-module',
     '@nuxt/fonts'
   ],
